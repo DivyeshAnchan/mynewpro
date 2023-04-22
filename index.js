@@ -1,6 +1,6 @@
 const http = require('http')
 const fs = require('fs')
-const port = process.env.PORT
+const PORT = process.env.PORT
 const hostname = 'localhost'
 const home = fs.readFileSync('./index.html', 'utf-8')
 const aboutus = fs.readFileSync('about.html', 'utf-8')
@@ -16,6 +16,6 @@ const server = http.createServer((req, res) => {
     res.end('Not Found 404 error')
   }
 })
-server.listen(port, hostname, () => {
-  console.log(`the Web Site Is Hosted in http://${hostname}:${port}`)
+server.listen(PORT, () => {
+  console.log(`the Web Site Is Hosted `)
 })
