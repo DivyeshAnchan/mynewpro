@@ -1,6 +1,6 @@
 const http = require('http')
 const fs = require('fs')
-const port = process.env.Port
+const port = process.env.PORT
 const hostname = 'localhost'
 const home = fs.readFileSync('./index.html', 'utf-8')
 const aboutus = fs.readFileSync('about.html', 'utf-8')
